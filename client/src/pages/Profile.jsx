@@ -33,8 +33,8 @@ export default function Profile() {
         </button>
       </form>
       <div className="flex justify-between mt-5">
-        <span className="text-red-700 cursor-pointer">Delete account</span>
-        <span className="text-red-700 cursor-pointer">Sign Out</span>
+        <span className="text-red-700 cursor-pointer hover:underline">Delete account</span>
+        <span className="text-red-700 cursor-pointer hover:underline">Sign Out</span>
       </div>
     </div>
   );
