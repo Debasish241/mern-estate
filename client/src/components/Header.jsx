@@ -2,6 +2,7 @@ import { FaSearch } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -23,6 +24,7 @@ export default function Header() {
     }
   }, [location.search]);
   return (
+    <div>
     <header className="bg-slate-200 shadow-md">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
@@ -71,5 +73,7 @@ export default function Header() {
         </ul>
       </div>
     </header>
+    <Footer/>
+    </div>
   );
 }
