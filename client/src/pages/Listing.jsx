@@ -42,6 +42,7 @@ export default function Listing() {
         setListing(data);
         setLoading(false);
         setError(false);
+        console.log("Image URLs:", data.imageUrls); // Add this line
       } catch (error) {
         setError(true);
         setLoading(false);
@@ -49,7 +50,7 @@ export default function Listing() {
     };
     fetchListing();
   }, [params.listingId]);
-
+  
   return (
     <main>
       {loading && <p className="text-center my-7 text-2xl">Loading...</p>}
