@@ -73,7 +73,7 @@ export default function Header() {
         </ul>
       </div>
     </header>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   );
 }
